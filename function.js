@@ -13,7 +13,6 @@ function handleClick(item) {
         number1 = undefined;
         document.getElementById('rezultatas').innerHTML = "";
     }
-
     switch (item) {
         case "1":
             document.getElementById('rezultatas').innerHTML += "1";
@@ -82,6 +81,4 @@ function veiksmlygu() {
         istorija.push({"number": number, "number1": number1, "veiksmai": veiksmas, "rezultatas": rezultatas});
         console.log(istorija);
     }
-
-
 }
