@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <title>Skaiciatuvas</title>
     <link rel="stylesheet" type="text/css" href="syles.css">
-    <script src="function.js" language="JavaScript" type="text/javascript" ></script>
+
 </head>
 <body>
+<div class="container">
     <table>
-        <thead>
         <tr>
-            <td colspan="4">
-                <input type="text" id="ekrnas" disabled>
+            <td colspan="4" id="rezultatas"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="skaiciai" id="skaicius7" value="7" onclick="handleClick('7')"></td>
+            <td><input type="button" class="skaiciai" id="skaicius8" value="8" onclick="handleClick('8')"></td>
+            <td><input type="button" class="skaiciai" id="skaicius9" value="9" onclick="handleClick('9')"></td>
+            <td><input type="button" class="veiksmai" id="dalyba" value="/" onclick="veiksmai(dalyba)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="skaiciai" id="skaicius4" value="4" onclick="handleClick('4')"></td>
+            <td><input type="button" class="skaiciai" id="skaicius5" value="5" onclick="handleClick('5')"></td>
+            <td><input type="button" class="skaiciai" id="skaicius6" value="6" onclick="handleClick('6')"></td>
+            <td><input type="button" class="veiksmai" id="daugyba" value="x" onclick="veiksmai(daugyba)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="skaiciai" id="skaicius1" value="1" onclick="handleClick('1')"></td>
+            <td><input type="button" class="skaiciai" id="skaicius2" value="2" onclick="handleClick('2')"></td>
+            <td><input type="button" class="skaiciai" id="skaicius3" value="3" onclick="handleClick('3')"></td>
+            <td><input type="button" class="veiksmai" id="atimtis" value="-" onclick="veiksmai(atimtis)"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" class="skaiciai" id="skaicius0" value="0" onclick="handleClick('0')">
             </td>
-        </tr>
-        </thead>
-        <tr>
-            <td><input type="button" id="skaicius7" value="7" onclick="handleClick()"></td>
-            <td><input type="button" id="skaicius8" value="8" onclick="handleClick()"></td>
-            <td><input type="button" id="skaicius9" value="9" onclick="handleClick()"></td>
-            <td><input type="button" id="dalyba" value="/"></td>
+            <td><input type="button" class="skaiciai" value="."></td>
+            <td rowspan="2"><input class="veiksmai" type="button" id="sudetis" value="+" onclick="veiksmai(sudetis)"></td>
         </tr>
         <tr>
-            <td><input type="button" id="skaicius4" value="4" onclick="handleClick()"></td>
-            <td><input type="button" id="skaicius5" value="5" onclick="handleClick()"></td>
-            <td><input type="button" id="skaicius6" value="6" onclick="handleClick()"></td>
-            <td><input type="button" id="daugyba" value="x"></td>
-        </tr>
-        <tr>
-            <td><input type="button" id="skaicius1" value="1"></td>
-            <td><input type="button" id="skaicius2" value="2"></td>
-            <td><input type="button" id="skaicius3" value="3"></td>
-            <td><input type="button" id="atimtis" value="-"></td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="button" id="skaicius0" value="0"></td>
-            <td><input type="button" class="taskas" value="."></td>
-            <td rowspan="2"><input type="button" id="sudetis" value="+"></td>
-        </tr>
-        <tr>
-        <td colspan="3"><input type="button" id="lygu" value="="></td>
+            <td colspan="3"><input type="button" class="veiksmai" id="lygu" value="=" onclick="veiksmlygu()"></td>
         </tr>
     </table>
 </div>
+<script src="function.js" language="JavaScript" type="text/javascript"></script>
 </body>
 </html>

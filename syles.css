@@ -1,9 +1,60 @@
-table {
-    width: 300px;
-    height: 320px;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-td {
-    border: 1px solid grey;
+.container {
+    width: 900px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.container table {
+    display: inline-block;
+    border-collapse: collapse;
+}
+
+.container table tr {
+    height: 100px;
+}
+.container table tr td{
+    height: 100px;
+    width: 100px;
+}
+
+#rezultatas {
+    width: 400px;
+    background-color: black;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+
+}
+
+.skaiciai {
+    background-color: white;
+    width: 100%;
+    line-height: 95px;
+}
+
+.veiksmai {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    line-height: 95px;
+}
+
+#lygu {
+    background-color: orange;
+}
+
+input:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+#sudetis {
+    line-height: 195px;
 }
