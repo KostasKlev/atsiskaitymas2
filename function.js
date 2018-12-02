@@ -47,7 +47,7 @@ function veiksmai(items) {
     veiksmas = items;
     if (number == undefined) {
         number = Number(document.getElementById('rezultatas').innerHTML);
-        document.getElementById('atsakymas').innerHTML = ""
+        document.getElementById('rezultatas').innerHTML = ""
     }
 }
 
@@ -58,16 +58,16 @@ function veiksmlygu() {
             number1 = 0;
         }
         switch (veiksmas) {
-            case "dalyba":
+            case "dalinti":
                 number / number1;
                 break;
-            case "daugyba":
+            case "dauginti":
                 number * number1;
                 break;
-            case "atimtis":
+            case "atimti":
                 number - number1;
                 break;
-            case "sudetis":
+            case "sudeti":
                 number + number1;
                 break;
         }
