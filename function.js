@@ -1,3 +1,5 @@
+'use strict';
+
 var rezultatas = undefined;
 var number = undefined;
 var number1 = undefined;
@@ -40,6 +42,11 @@ function handleClick(item) {
         case "9":
             document.getElementById('rezultatas').innerHTML += "9";
             break;
+        case "0":
+            document.getElementById('rezultatas').innerHTML += "0";
+            break;
+        case "point":
+            document.getElementById('rezultatas').innerHTML += ".";
     }
 }
 
@@ -59,20 +66,20 @@ function veiksmlygu() {
         }
         switch (veiksmas) {
             case "dalinti":
-                number / number1;
+                rezultatas = number / number1;
                 break;
             case "dauginti":
-                number * number1;
+                rezultatas = number * number1;
                 break;
             case "atimti":
-                number - number1;
+                rezultatas = number - number1;
                 break;
             case "sudeti":
-                number + number1;
+               rezultatas = number + number1;
                 break;
         }
         document.getElementById('rezultatas').innerHTML = rezultatas;
-        istorija.push({"number": number, "number1": number1, "veiksmai": veiksmas, "rezultatas": rezultatas})
+        istorija.push({"number": number, "number1": number1, "veiksmai": veiksmas, "rezultatas": rezultatas});
         console.log(istorija);
     }
 
