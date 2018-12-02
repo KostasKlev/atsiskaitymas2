@@ -75,7 +75,7 @@ function veiksmlygu() {
                 rezultatas = number - number1;
                 break;
             case "sudeti":
-               rezultatas = number + number1;
+                rezultatas = number + number1;
                 break;
         }
         document.getElementById('rezultatas').innerHTML = rezultatas;

@@ -18,7 +18,8 @@
 .container table tr {
     height: 100px;
 }
-.container table tr td{
+
+.container table tr td {
     height: 100px;
     width: 100px;
 }
